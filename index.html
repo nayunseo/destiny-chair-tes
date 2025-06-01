@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>운명의 의자 테스트</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div id="start-screen">
+      <h1>운명의 의자 테스트</h1>
+      <img src="images/barcelona.jpg" alt="표지 이미지" style="max-width:300px;" />
+      <p>나와 어울리는 의자는 무엇일까?<br>총 15개의 질문에 답해보세요!</p>
+      <button onclick="startTest()">테스트 시작하기</button>
+    </div>
+    <div id="quiz-box" style="display:none;">
+      <p id="question"></p>
+      <button onclick="chooseAnswer('A')" id="btnA"></button>
+      <button onclick="chooseAnswer('B')" id="btnB"></button>
+    </div>
+    <div id="result-box" style="display:none;">
+      <h2 id="chair-name"></h2>
+      <img id="chair-img" src="" alt="의자 이미지" />
+      <p id="result-desc"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
